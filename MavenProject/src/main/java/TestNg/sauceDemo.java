@@ -97,6 +97,7 @@ public class sauceDemo {
 		driver.findElement(By.cssSelector("#add-to-cart-sauce-labs-backpack")).click();
 		String cartNumber = driver.findElement(By.cssSelector("span[class=\"shopping_cart_badge\"]")).getText();
 		Assert.assertEquals(cartNumber, "1");
+		
 	}
 	
 	@Test(priority=4)
